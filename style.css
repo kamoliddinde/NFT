@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Work Sans", sans-serif;
+  src: url("./assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+* {
+  font-family: "Work Sans", sans-serif;
+  outline: none;
+}
+body {
+  background-color: #2b2b2b;
+}
+.main-btn {
+  background-color: #a259ff;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+}
+.w-30 {
+  width: 30%;
+}
+.main-title {
+  font-size: 67px;
+}
+.grayBg {
+  background-color: #3b3b3b;
+}
+.main-outline-btn {
+  background-color: transparent;
+  border: 1px solid #a259ff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.main-outline-btn i {
+  color: #a259ff;
+  margin-right: 10px;
+}
+.cardOrder {
+  width: 30px;
+  height: 30px;
+  background-color: #2b2b2b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #858584;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.ntf-highlight-section {
+  background-image: url(./assets/img/NFT\ Highlight.png);
+  min-height: 640px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.grayBg2 {
+  background-color: #3b3b3b80;
+}
+.grayText {
+  color: #ccc;
+}
+@media screen and (max-width: 576px) {
+  .main-title {
+    font-size: 40px;
+  }
+}
