@@ -1,81 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>NFT Marketplace</title>
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-          crossorigin="anonymous"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
-    
-        <link rel="stylesheet" href="style.css" />
-      </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Marketplace</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="py-3 px-4">
-        <div class="d-flex justify-content-between align-items-center">
-          <a href="index.html"><img src="./assets/img/logo.png" alt="" /></a>
-          <nav class="d-none d-lg-block">
-            <ul class="d-flex align-items-center gap-5 list-unstyled m-0 p-0">
-              <li>
-                <a
-                  href="./marketplace.html"
-                  class="text-decoration-none text-white"
-                  >Marketplace</a
-                >
-              </li>
-              <li>
-                <a href="Rankings.html" class="text-decoration-none text-white">Rankings</a>
-              </li>
-              <li>
-                <a href="wallet.html" class="text-decoration-none text-white"
-                  >Connect a wallet</a
-                >
-              </li>
-              <li>
-                <a href="form.html">
-                  <button class="main-btn">
-                    <i class="fa-regular fa-user"></i>
-                    <span>Sign Up</span>
-                  </button>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <button class="btn text-white fs-4 d-lg-none">
-            <i class="fa-solid fa-bars-staggered"></i>
-          </button>
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="index.html"><img src="./assets/img/logo.png" alt="" /></a>
+        <nav class="d-none d-lg-block">
+          <ul class="d-flex align-items-center gap-5 list-unstyled m-0 p-0">
+            <li>
+              <a
+                href="./marketplace.html"
+                class="text-decoration-none text-white"
+                >Marketplace</a
+              >
+            </li>
+            <li>
+              <a href="Rankings.html" class="text-decoration-none text-white"
+                >Rankings</a
+              >
+            </li>
+            <li>
+              <a href="wallet.html" class="text-decoration-none text-white"
+                >Connect a wallet</a
+              >
+            </li>
+            <li>
+              <a href="form.html">
+                <button class="main-btn">
+                  <i class="fa-regular fa-user"></i>
+                  <span>Sign Up</span>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn text-white fs-4 d-lg-none">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="text-white py-3">
+          <h1>Top Creators</h1>
+          <p>Check out top ranking NFT artists on the NFT Marketplace.</p>
         </div>
-      </header>
-      <section>
-        <div class="container">
-            <div class="text-white py-3" >
-                <h1>Top Creators</h1>
-                <p>Check out top ranking NFT artists on the NFT Marketplace.</p>
-            </div>
-            <div class="d-flex justify-content-between text-lg-center text-white"> 
-                <div style="width: 200px;" class=" border-bottom ">Today</div>
-                <div>This Week</div>
-                <div>This Month</div>
-                <div>All Time</div>
-            </div>
+        <div class="d-flex justify-content-between text-lg-center text-white">
+          <div style="width: 200px" class="border-bottom">Today</div>
+          <div>This Week</div>
+          <div>This Month</div>
+          <div>All Time</div>
         </div>
-      </section>
-      <section>
-        <div class="container text-white py-3 d-flex ">
-           <div style="height: 50px;" class="  rounded-pill grayBg text-white">
-          <h1></h1>
-           </div>
-        </div>
-      </section>
-</body>
+      </div>
+    </section>
+    <section>
+      <div class="container text-white py-3">
+        <table class="w-100">
+          <thead>
+            <tr>
+              <th class="p-2">#</th>
+              <th class="p-2">Artist</th>
+              <th class="p-2">Change</th>
+              <th class="p-2">NFTs Sold</th>
+              <th class="p-2">Volume</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">1</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (9).png" alt="" width="40" />
+                  <p class="mt-1">Jaydon Ekstrom Bothman</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">2</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Avatar.png" alt="" width="40" />
+                  <p class="mt-1">Ruben Carder</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">3</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (10).png" alt="" width="40" />
+                  <p class="mt-1">Alfredo Septimus</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">1</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (11).png" alt="" width="40" />
+                  <p class="mt-1">Davis Franci</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">5</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Avatar (6).png" alt="" width="40" />
+                  <p class="mt-1">Livia Rosser</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">6</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Avatar (7).png" alt="" width="40" />
+                  <p class="mt-1">Kianna Donin</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">7</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (12).png" alt="" width="40" />
+                  <p class="mt-1">Phillip Lipshutz</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">8</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (13).png" alt="" width="40" />
+                  <p class="mt-1">Maria Rosser</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">9</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (14).png" alt="" width="40" />
+                  <p class="mt-1">Kianna Stanton</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">10</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (25).png" alt="" width="40" />
+                  <p class="mt-1">Angel Lubin</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">11</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (16).png" alt="" width="40" />
+                  <p class="mt-1">Allison Torff</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">12</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (17).png" alt="" width="40" />
+                  <p class="mt-1">Davis Workman</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">13</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (18).png" alt="" width="40" />
+                  <p class="mt-1">Lindsey Lipshutz</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">14</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (1).png" alt="" width="40" />
+                  <p class="mt-1">Randy Carder</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">15</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (20).png" alt="" width="40" />
+                  <p class="mt-1">Lydia Culhane</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">16</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (21).png" alt="" width="40" />
+                  <p class="mt-1">Rayna Bator</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">17</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (22).png" alt="" width="40" />
+                  <p class="mt-1">Jocelyn Westervelt</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">18</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Avatar (8).png" alt="" width="40" />
+                  <p class="mt-1">Marilyn Torff</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">19</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (23).png" alt="" width="40" />
+                  <p class="mt-1">Skylar Levin</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+          <tbody >
+            <tr class="grayBg " style="border-bottom: 10px solid  #2b2b2b">
+              <td class="p-2">20</td>
+              <td class="p-2" style="max-width: 400px; ">
+                <div class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/Artist Avatar (24).png" alt="" width="40" />
+                  <p class="mt-1">Terry Dorwart</p>
+                </div>
+              </td>
+              <td class="p-2">
+                <span class="text-success">+1.41%</span>
+              </td>
+              <td class="p-2">602</td>
+              <td class="p-2">12.4 ETH</td>
+            </tr>
+          </tbody>
+         
+        </table>
+      </div>
+    </section>
+  </body>
 </html>
